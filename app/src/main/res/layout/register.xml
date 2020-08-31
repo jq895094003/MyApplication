@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingTop="70.0dip">
+
+        <EditText
+            android:id="@+id/register_user"
+            android:layout_width="250.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="请输入手机号" />
+
+        <EditText
+            android:id="@+id/register_account"
+            android:layout_width="250.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="请输入登录账号" />
+
+        <EditText
+            android:id="@+id/register_pwd"
+            android:layout_width="250.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="请输入密码" />
+
+        <EditText
+            android:id="@+id/register_shop"
+            android:layout_width="250.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="请添加您的商铺" />
+
+        <EditText
+            android:id="@+id/register_name"
+            android:layout_width="250.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="请输入您的姓名" />
+
+
+        <RadioGroup
+            android:id="@+id/select_role"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20.0dip"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/shop_manager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店长" />
+
+            <View
+                android:layout_width="20.0dip"
+                android:layout_height="1.0dip"
+                android:background="#ffffffff" />
+
+            <RadioButton
+                android:id="@+id/shop_empyloo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="员工" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/regiter"
+            android:layout_width="250.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20.0dip"
+            android:background="@drawable/button_shap"
+            android:text="注册"
+            android:textColor="#ffffffff" />
+
+    </LinearLayout>
+</LinearLayout>

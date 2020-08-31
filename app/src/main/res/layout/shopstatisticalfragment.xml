@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff000000"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/shop_sno_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10.0dip"
+                android:background="@null"
+                android:textColor="#ffffffff"
+                android:textSize="30.0dip"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="18.0dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信收益:"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+
+                    <TextView
+                        android:id="@+id/shop_wx_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信笔数:"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+
+                    <TextView
+                        android:id="@+id/shop_wx_ratio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18.0dip"
+                    android:layout_weight="1.0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝收益:"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+
+                    <TextView
+                        android:id="@+id/shop_zfb_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="18.0dip"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝笔数:"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+
+                    <TextView
+                        android:id="@+id/shop_zfb_ratio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="18.0dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信退款:"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+
+                    <TextView
+                        android:id="@+id/shop_wx_th_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝退款:"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+
+                    <TextView
+                        android:id="@+id/shop_zfb_th_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="18.0dip"
+                android:layout_marginRight="18.0dip"
+                android:layout_marginBottom="24.0dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="微信费率:"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+
+                    <TextView
+                        android:id="@+id/shop_wx_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支付宝费率:"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+
+                    <TextView
+                        android:id="@+id/shop_zfb_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffffff"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15.0dip"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="开始日期:"
+                        android:textSize="14.0dip" />
+
+                    <EditText
+                        android:id="@+id/shop_begindate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="结束日期:"
+                        android:textSize="14.0dip" />
+
+                    <EditText
+                        android:id="@+id/shop_stopdate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="9.0dip"
+                android:layout_marginRight="10.0dip"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/shop_yesterday"
+                    android:layout_width="0.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_shap"
+                    android:padding="2.0dip"
+                    android:text="前一天"
+                    android:textColor="#ffffffff"
+                    android:textSize="13.0dip" />
+
+                <Button
+                    android:id="@+id/shop_query_statistical"
+                    android:layout_width="0.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_shap"
+                    android:padding="2.0dip"
+                    android:text="查询"
+                    android:textColor="#ffffffff"
+                    android:textSize="13.0dip" />
+
+                <Button
+                    android:id="@+id/shop_tommorow"
+                    android:layout_width="0.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/button_shap"
+                    android:padding="2.0dip"
+                    android:text="后一天"
+                    android:textColor="#ffffffff"
+                    android:textSize="13.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+<!--        <HorizontalScrollView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--            <LinearLayout-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="fill_parent"-->
+<!--                android:background="#ffffffff"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="fill_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginTop="10.0dip"-->
+<!--                    android:orientation="horizontal">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:text="门店编号"-->
+<!--                        android:textSize="10.0dip" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:text="微信收款"-->
+<!--                        android:textSize="10.0dip" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:text="微信退款"-->
+<!--                        android:textSize="10.0dip" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:text="支付宝收款"-->
+<!--                        android:textSize="10.0dip" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:text="支付宝退款"-->
+<!--                        android:textSize="10.0dip" />-->
+
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="支付失败"-->
+<!--                        android:textSize="10.0dip" />-->
+<!--                    <TextView-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:gravity="center"-->
+<!--                        android:text="门店费率"-->
+<!--                        android:textSize="10.0dip" />-->
+<!--                </LinearLayout>-->
+
+<!--                -->
+<!--            </LinearLayout>-->
+<!--        </HorizontalScrollView>-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffffff"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/shop_statistic_list"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginRight="10.0dip"
+                android:layout_marginBottom="30.0dip"
+                android:clipChildren="false"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

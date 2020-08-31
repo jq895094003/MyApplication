@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10.0dip"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shop_filtrate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textColor="#ff000000"
+            android:textSize="30.0dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始时间"
+                android:textSize="14.0dip" />
+
+            <EditText
+                android:id="@+id/begindate_filtrate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="结束时间"
+                android:textSize="14.0dip" />
+
+            <EditText
+                android:id="@+id/stopdate_filtrate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="员工编号" />
+
+            <Spinner
+                android:id="@+id/worker_fil"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:entries="@array/loyee_no"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="支付金额" />
+
+            <EditText
+                android:id="@+id/pay_money"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="支付方式" />
+
+            <Spinner
+                android:id="@+id/zftype_fil"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:entries="@array/de_type"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="18.0dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/upDay"
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_shap"
+            android:padding="2.0dip"
+            android:text="前一天"
+            android:textColor="#ffffffff"
+            android:textSize="13.0dip" />
+
+        <Button
+            android:id="@+id/fil_button"
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_shap"
+            android:padding="2.0dip"
+            android:text="筛选"
+            android:textColor="#ffffffff"
+            android:textSize="13.0dip" />
+
+        <Button
+            android:id="@+id/downDay"
+            android:layout_width="0.0dip"
+            android:layout_height="30.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/button_shap"
+            android:padding="2.0dip"
+            android:text="后一天"
+            android:textColor="#ffffffff"
+            android:textSize="13.0dip" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nowDay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginRight="18.0dip"
+        android:gravity="center" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/detail_fragment_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="30.0dip"
+        android:layout_marginTop="5.0dip"
+        android:layout_marginRight="30.0dip"
+        android:layout_marginBottom="30.0dip" />
+</LinearLayout>

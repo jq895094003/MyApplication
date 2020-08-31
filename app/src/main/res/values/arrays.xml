@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="list_status">
+        <item>全部</item>
+        <item>未审核</item>
+        <item>已审核</item>
+        <item>已停用</item>
+    </string-array>
+    <string-array name="loyee_no">
+        <item>全部</item>
+    </string-array>
+    <string-array name="spinner">
+        <item>aaaaa</item>
+        <item>bbbbb</item>
+        <item>ccccc</item>
+    </string-array>
+    <string-array name="tab_titles">
+        <item>统计</item>
+        <item>分店</item>
+        <item>明细</item>
+        <item>异常</item>
+    </string-array>
+    <string-array name="de_type">
+        <item>全部</item>
+        <item>支付宝</item>
+        <item>微信</item>
+    </string-array>
+    <string-array name="zf_type">
+        <item>全部</item>
+        <item>支付宝失败</item>
+        <item>微信失败</item>
+        <item>支付宝退款</item>
+        <item>微信退款</item>
+    </string-array>
+</resources>

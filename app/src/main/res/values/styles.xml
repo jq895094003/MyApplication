@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="itemSpinnerStyle" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:background">#000</item>
+    </style>
+    <style name="MyCustomTabLayout" parent="@style/Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?colorAccent</item>
+        <item name="tabIndicatorFullWidth">true</item>
+        <item name="tabIndicatorHeight">0.0dip</item>
+        <item name="tabSelectedTextColor">#fff7554a</item>
+        <item name="tabTextColor">#ff6b7984</item>
+    </style>
+</resources>
